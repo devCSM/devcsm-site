@@ -1,0 +1,19 @@
+# VS / .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Azure Functions local files
+api/local.settings.json
+**/.azurefunctions/**
+
+# SWA CLI output
+build_out/
+
+# VS Code workspace (optional)
+.vscode/
+
+# Safety: ignore any accidental device name
+api/nul
+

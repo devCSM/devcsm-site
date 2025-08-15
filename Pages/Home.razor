@@ -1,0 +1,21 @@
+﻿@* @page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app. *@
+
+
+@page "/"
+@using MySite.Services
+@inject IHelloApi Hello
+<PageTitle>Home</PageTitle>
+
+<h1>Hello World</h1>
+<p>@message</p>
+
+@code {
+    string message = "Loading...";
+    protected override async Task OnInitializedAsync() => message = await Hello.GetAsync();
+}
