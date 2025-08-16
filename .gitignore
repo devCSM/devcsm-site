@@ -12,7 +12,6 @@ api/local.settings.json
 build_out/
 
 # VS Code workspace (optional)
-.vscode/
 
 # Safety: ignore any accidental device name
 api/nul
