@@ -1,21 +1,82 @@
-﻿@* @page "/"
+﻿@page "/"
+<PageTitle>devCSM</PageTitle>
 
-<PageTitle>Home</PageTitle>
+<div class="header row">
+    <div class="col-12">
+        <h1 class="title-text">devCSM</h1>
+        <h2 class="h2-flex">A software engineering and logistics company.</h2>
+        <p>
+            <img src="images/icon_flag.jpg" alt="Flag" />
+            <em> Veteran owned and operated.</em>
+        </p>
+    </div>
+</div>
 
-<h1>Hello, world!</h1>
+<div class="row">
+    <div class="col-4">
+        <img src="images/software_engineering.jpg" />
+    </div>
+    <div class="col-8">
+        <h2 class="align-left h2-flex">Software Engineering Services</h2>
+        <ul>
+            <li>Project scheduling.</li>
+            <li>Requirements development.</li>
+            <li>Use case development.</li>
+            <li>Use case diagramming.</li>
+            <li>Sequence diagramming.</li>
+            <li>Class diagramming.</li>
+        </ul>
+    </div>
+</div>
 
-Welcome to your new app. *@
+<div class="row">
+    <div class="col-4">
+        <img src="images/consulting.jpg" />
+    </div>
+    <div class="col-8">
+        <h2 class="align-left h2-flex">Consulting Services</h2>
+        <ul>
+            <li>Requirements review.</li>
+            <li>Technical representation.</li>
+            <li>Contract/requirements crosswalk.</li>
+        </ul>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-4">
+        <img src="images/nursing_informatics.jpg" />
+    </div>
+    <div class="col-8">
+        <h2 class="align-left h2-flex">Nursing Informatics</h2>
+        <ul>
+            <li>Health information systems requirements review.</li>
+            <li>Information systems research and presentation.</li>
+            <li>Technical expertise and integration support.</li>
+        </ul>
+    </div>
+</div>
 
-@page "/"
-@using MySite.Services
-@inject IHelloApi Hello
-<PageTitle>Home</PageTitle>
+<div class="row">
+    <div class="col-4">
+        <img src="images/logistics.jpg" />
+    </div>
+    <div class="col-8">
+        <h2 class="align-left h2-flex">Logistics</h2>
+        <ul>
+            <li>Life support planning.</li>
+            <li>Shipping coordination.</li>
+            <li>Purchase, sales, and distribution of technical end items.</li>
+            <li>Digitization of paper documents</li>
+        </ul>
+    </div>
+</div>
 
-<h1>Hello World</h1>
-<p>@message</p>
-
-@code {
-    string message = "Loading...";
-    protected override async Task OnInitializedAsync() => message = await Hello.GetAsync();
-}
+<div class="footer row">
+    <div class="col-12">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@devcsm.com">contact@devcsm.com</a></p>
+        <p>Phone: <a href="tel:731-474-1998">(731) 474-1998</a></p>
+        <h3>devCSM, LLC</h3>
+    </div>
+</div>
